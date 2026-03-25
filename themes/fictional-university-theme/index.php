@@ -1,4 +1,6 @@
-<?php 
+<?php get_header(); //hader of the page
+
+// the loop of the content of the page
 while(have_posts()) {
     the_post();?>
 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
@@ -8,5 +10,7 @@ while(have_posts()) {
     <?php
    
 }
+//the footer of the page
+get_footer();
 
 ?>

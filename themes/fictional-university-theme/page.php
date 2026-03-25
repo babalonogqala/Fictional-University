@@ -1,4 +1,7 @@
 <?php 
+
+get_header();
+
 while(have_posts()) {
     the_post();?>
     <h1>this is new page not post</h1>
@@ -7,7 +10,7 @@ while(have_posts()) {
 
     
     <?php
-   
+   get_footer();
 }
 
 ?>
